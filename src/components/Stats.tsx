@@ -17,7 +17,7 @@ const Stats = () => {
                     onClick={()=>setFollowerCount(prev => prev +1)}
                     onContextMenu={(e)=>{
                     e.preventDefault();
-                    setFollowerCount(prev => prev -1)}} > Folowets : {followerCount}</div>
+                    setFollowerCount(prev => prev -1)}} > Followers : {followerCount}</div>
 
 
                 <div

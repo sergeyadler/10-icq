@@ -17,14 +17,14 @@ const Stats = () => {
                     onClick={()=>setFollowerCount(prev => prev +1)}
                     onContextMenu={(e)=>{
                     e.preventDefault();
-                    setFollowerCount(prev => prev -1)}} > Followers : {followerCount}</div>
+                    setFollowerCount(prev =>  Math.max(0, prev - 1)}} > Followers : {followerCount}</div>
 
 
                 <div
                     onClick={()=>setFollowingCount(prev => prev +1)}
                     onContextMenu={(e)=>{
                         e.preventDefault();
-                        setFollowingCount(prev => prev -1)
+                        setFollowingCount(prev =>  Math.max(0, prev - 1))
                     }}>Following : {followingCount}</div>
             </div>
         </div>

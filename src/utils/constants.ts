@@ -1,8 +1,7 @@
 export interface IcqInterface {
     user: UserInterface;
-    changeAvatar: (url: string)=> void;
     stats: StatsInterface;
-    setStats: React.Dispatch<React.SetStateAction<StatsInterface>>
+
 };
 
 export interface UserInterface {
